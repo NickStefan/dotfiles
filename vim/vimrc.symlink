@@ -27,7 +27,7 @@ call vundle#rc()
 
 " General
 
-  set background=dark         " Assume a dark background
+  set background=light        " Assume a light background
   filetype plugin indent on   " Automatically detect file types.
   syntax on                   " Syntax highlighting
   set mouse=a                 " Automatically enable mouse usage
@@ -53,7 +53,6 @@ call vundle#rc()
 
   if filereadable(expand("~/.vim/bundle/vim-colors-solarized/colors/solarized.vim"))
     let g:solarized_termcolors=256
-    set background=light
     color solarized                 " Load a colorscheme
   endif
 

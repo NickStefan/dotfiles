@@ -45,9 +45,15 @@ call vundle#rc()
   set history=1000                    " Store a ton of history (default is 20)
   set spell                           " Spell checking on
   set hidden                          " Allow buffer switching without saving
+
+" }
+
+" Mappings {
   
+  let mapleader = "\<space>"
   map! jj <ESC>
-  map <C-n> :NERDTreeToggle<CR>
+  map <leader>n :NERDTreeToggle<CR>
+  map <leader>w <C-w>
 
 " }
 

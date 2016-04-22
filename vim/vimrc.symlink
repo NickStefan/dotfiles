@@ -55,7 +55,7 @@ call vundle#rc()
   let mapleader = "\<space>"
   map! jj <ESC>
   map <leader>n :NERDTreeToggle<CR>
-  map <leader>w <C-w>
+  map <leader>x <C-w>
 
 " }
 

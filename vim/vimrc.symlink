@@ -26,6 +26,7 @@ call vundle#rc()
   Bundle 'tpope/vim-fugitive'
   Bundle 'fatih/vim-go'
   Bundle 'terryma/vim-multiple-cursors'
+  Bundle 'scrooloose/nerdcommenter'
 
 " General
 

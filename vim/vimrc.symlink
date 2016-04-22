@@ -25,6 +25,7 @@ call vundle#rc()
   Bundle 'scrooloose/nerdtree'
   Bundle 'tpope/vim-fugitive'
   Bundle 'fatih/vim-go'
+  Bundle 'terryma/vim-multiple-cursors'
 
 " General
 
@@ -55,6 +56,14 @@ call vundle#rc()
   map <leader>n :NERDTreeToggle<CR>
   map <leader>w <C-w>
 
+" }
+
+" Multiple Cursors {
+  let g:multi_cursor_next_key='<C-n>'
+  let g:multi_cursor_prev_key='<C-p>'
+  let g:multi_cursor_skip_key='<C-x>'
+  let g:multi_cursor_quit_key='<Esc>'
+  
 " }
 
 " Vim UI {

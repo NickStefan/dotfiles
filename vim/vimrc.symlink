@@ -55,8 +55,23 @@ call vundle#rc()
   let mapleader = "\<space>"
   map! jj <ESC>
   map <leader>n :NERDTreeToggle<CR>
-  map <leader>f <C-w>
+  noremap <leader>s :w<CR>
 
+  " stop reaching for :
+  map <leader>c :
+
+  " global find template
+  map <leader>f <C-p>
+  map <leader>F :grep -R BrandList `find packages/ -type f -name "*.js"`
+
+  map <leader>v <C-w>v
+  map <leader>b <C-w>s
+
+  " move between panes
+  map <leader>h <C-w>h
+  map <leader>j <C-w>j
+  map <leader>k <C-w>k
+  map <leader>l <C-w>l
 " }
 
 " Multiple Cursors {

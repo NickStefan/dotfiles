@@ -76,7 +76,7 @@ call vundle#rc()
   let mapleader = "\<space>"
   map! jj <ESC>
   map <leader>n :NERDTreeToggle<CR>
-  noremap <leader>s :w<CR>
+  noremap <leader>a :w<CR>
 
   " stop reaching for :
   map <leader>c :
@@ -93,6 +93,9 @@ call vundle#rc()
   map <leader>j <C-w>j
   map <leader>k <C-w>k
   map <leader>l <C-w>l
+
+  map <leader>s :bprevious<CR>
+  map <leader>d :bnext<CR>
 " }
 
 " Multiple Cursors {

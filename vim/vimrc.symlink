@@ -162,7 +162,8 @@ call vundle#rc()
   set scrolljump=5                " Lines to scroll when cursor leaves screen
   set scrolloff=3                 " Minimum lines to keep above and below cursor
   set foldenable                  " Auto fold code
-  set list
+  " dont highlight tabs in golang files
+  set nolist
 
   " List chars
   set listchars=""          " Reset the listchars

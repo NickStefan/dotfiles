@@ -41,7 +41,8 @@ call vundle#rc()
   set nowritebackup
   set noswapfile
   scriptencoding utf-8
-  autocmd BufEnter * if bufname("") !~ "^\[A-Za-z0-9\]*://" | lcd %:p:h | endif " Always switch to the current file directory 
+  " this would make any ! scripts run in the directory of the buffer
+  "autocmd BufEnter * if bufname("") !~ "^\[A-Za-z0-9\]*://" | lcd %:p:h | endif " Always switch to the current file directory 
 
   set shortmess+=filmnrxoOtT          " Abbrev. of messages (avoids 'hit enter')
   set viewoptions=folds,options,cursor,unix,slash " Better Unix / Windows compatibility
@@ -75,8 +76,13 @@ call vundle#rc()
   
   let mapleader = "\<space>"
   map! jj <ESC>
-  map <leader>n :NERDTreeToggle<CR>
+  map <leader>m :NERDTreeToggle<CR>
+  " jump back to nerdtree
+  map <leader>n :NERDTree<CR>
   noremap <leader>a :w<CR>
+
+  " refresh buffers
+  nmap <leader>r :checktime<CR>
 
   " stop reaching for :
   map <leader>c :

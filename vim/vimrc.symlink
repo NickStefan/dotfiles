@@ -76,9 +76,13 @@ call vundle#rc()
   
   let mapleader = "\<space>"
   map! jj <ESC>
+  
   map <leader>m :NERDTreeToggle<CR>
   " jump back to nerdtree
   map <leader>n :NERDTree<CR>
+  " reveal in side bar
+  map <leader>t :NERDTreeFind<CR>
+  
   noremap <leader>a :w<CR>
 
   " refresh buffers

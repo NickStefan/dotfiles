@@ -19,7 +19,7 @@ call vundle#rc()
   Bundle 'Raimondi/delimitMate'
   Bundle 'Lokaltog/powerline'
   Bundle 'flazz/vim-colorschemes'
-  Bundle 'moll/bbye'
+  Bundle 'moll/vim-bbye'
 
   " General Programming
   Bundle "pangloss/vim-javascript"

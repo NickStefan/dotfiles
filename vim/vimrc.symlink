@@ -19,6 +19,7 @@ call vundle#rc()
   Bundle 'Raimondi/delimitMate'
   Bundle 'Lokaltog/powerline'
   Bundle 'flazz/vim-colorschemes'
+  Bundle 'moll/vim-bbye'
 
   " General Programming
   Bundle "pangloss/vim-javascript"
@@ -70,7 +71,7 @@ call vundle#rc()
   let g:syntastic_auto_loc_list = 1
   let g:syntastic_check_on_open = 0
   let g:syntastic_check_on_wq = 0
-
+  let g:syntastic_go_checkers = ['go']
 " }
 
 " Mappings {
@@ -87,12 +88,6 @@ call vundle#rc()
   
   noremap <leader>a :w<CR>
 
-  " refresh buffers
-  nmap <leader>r :checktime<CR>
-
-  " stop reaching for :
-  map <leader>c :
-
   " global find template
   map <leader>f <C-p>
   map <leader>F :grep -R BrandList `find packages/ -type f -name "*.js"`
@@ -105,7 +100,10 @@ call vundle#rc()
   map <leader>j <C-w>j
   map <leader>k <C-w>k
   map <leader>l <C-w>l
-
+  
+  " buffers
+  nmap <leader>r :checktime<CR>
+  map <leader>c :Bdelete<CR>
   map <leader>s :bprevious<CR>
   map <leader>d :bnext<CR>
 " }

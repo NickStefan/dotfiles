@@ -93,7 +93,7 @@ call vundle#rc()
 
   " global find template
   map <leader>f <C-p>
-  map <leader>F :grep -R BrandList `find packages/ -type f -name "*.js"`
+  map <leader>F :grep -R "" `find . -type f -name "*.py"`
 
   map <leader>v <C-w>v
   map <leader>b <C-w>s
@@ -109,6 +109,9 @@ call vundle#rc()
   map <leader>c :Bdelete<CR>
   map <leader>s :bprevious<CR>
   map <leader>d :bnext<CR>
+
+  " clipboard
+  map <leader>y :w !pbcopy <CR><CR>
 " }
 
 " Multiple Cursors {

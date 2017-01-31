@@ -32,7 +32,7 @@ call vundle#rc()
   Bundle 'scrooloose/nerdcommenter'
 
 " General
-
+  autocmd BufWritePre * %s/\s\+$//e " Remove trailing whitespace on each line
   set background=light        " Assume a light background
   filetype plugin indent on   " Automatically detect file types.
   syntax on                   " Syntax highlighting

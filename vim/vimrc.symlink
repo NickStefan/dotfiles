@@ -43,7 +43,7 @@ call vundle#rc()
   set noswapfile
   scriptencoding utf-8
   " this would make any ! scripts run in the directory of the buffer
-  "autocmd BufEnter * if bufname("") !~ "^\[A-Za-z0-9\]*://" | lcd %:p:h | endif " Always switch to the current file directory 
+  "autocmd BufEnter * if bufname("") !~ "^\[A-Za-z0-9\]*://" | lcd %:p:h | endif " Always switch to the current file directory
 
   set shortmess+=filmnrxoOtT          " Abbrev. of messages (avoids 'hit enter')
   set viewoptions=folds,options,cursor,unix,slash " Better Unix / Windows compatibility
@@ -78,22 +78,22 @@ call vundle#rc()
 " }
 
 " Mappings {
-  
+
   let mapleader = "\<space>"
   map! jj <ESC>
-  
+
   map <leader>m :NERDTreeToggle<CR>
   " jump back to nerdtree
   map <leader>n :NERDTree<CR>
   " reveal in side bar
   map <leader>t :NERDTreeFind<CR>
   let NERDTreeShowHidden=1
-  
+
   noremap <leader>a :w<CR>
 
   " global find template
   map <leader>f <C-p>
-  map <leader>F :grep -R "" `find . -type f -name "*.py"`
+  map <leader>F :grep -R "" `find ~/sites/next/django/ -type f -name "*.py"`
 
   map <leader>v <C-w>v
   map <leader>b <C-w>s
@@ -103,7 +103,7 @@ call vundle#rc()
   map <leader>j <C-w>j
   map <leader>k <C-w>k
   map <leader>l <C-w>l
-  
+
   " buffers
   nmap <leader>r :checktime<CR>
   map <leader>c :Bdelete<CR>
@@ -119,7 +119,7 @@ call vundle#rc()
   let g:multi_cursor_prev_key='<C-p>'
   let g:multi_cursor_skip_key='<C-x>'
   let g:multi_cursor_quit_key='<Esc>'
-  
+
 " }
 
 " Vim UI {
@@ -200,12 +200,12 @@ call vundle#rc()
   set nowrap                      " Wrap long lines
   set autoindent                  " Indent at the same level of the previous line
   set expandtab                   " Tabs are spaces, not tabs
-  
+
   " 1 tab == 4 spaces
   set shiftwidth=4
   set tabstop=4
   set softtabstop=4               " Let backspace delete indent
-  
+
   "set matchpairs+=<:>             " Match, to be used with %
   set comments=sl:/*,mb:*,elx:*/  " auto format comment blocks
 
